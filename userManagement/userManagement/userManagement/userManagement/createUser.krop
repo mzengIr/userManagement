@@ -1,0 +1,13 @@
+{
+  "details": {
+    "endpoint": "http://localhost:50052",
+    "methodFqn": "userManagement.userManagement.createUser"
+  },
+  "requests": [
+    {
+      "location": "createUser-request.json"
+    }
+  ],
+  "operationType": "unary",
+  "invokerName": "grpc"
+}

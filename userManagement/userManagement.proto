@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option go_package = "github/userManagement/userManagement";
+
+package userManagement;
+
+service userManagement {
+  rpc createUser (User) returns (Response) {}
+}
+
+message User {
+    string fullname = 1;
+    string email = 2;
+    string password = 3;
+}
+
+message Response {
+    string message = 1;
+    string status = 2;
+    string data = 3;
+}
